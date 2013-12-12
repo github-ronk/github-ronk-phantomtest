@@ -1,0 +1,13 @@
+language: php
+
+php:
+    - "5.5"
+before_script:
+    - sudo apt-get update > /dev/null
+    - composer self-update
+    - composer install --no-interaction --prefer-dist
+    - phantomjs --debug=true --ignore-ssl-errors=true --local-to-remote-url-access=true --webdriver=127.0.0.1:8910
+    - sleep 5
+
+script:
+    - ./bin/behat

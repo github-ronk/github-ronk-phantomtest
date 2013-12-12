@@ -1,0 +1,18 @@
+default:
+  paths:
+    # %behat.paths.base% is a directory where this config is located
+    bootstrap: '%behat.paths.base%/tests'
+    features: '%behat.paths.base%/tests/features'
+  formatter:
+        name:                       pretty,html
+        parameters:
+            decorated:              true
+            verbose:                false
+            time:                   true
+            language:               en
+            output_path:            null, behat_report.html
+            multiline_arguments:    true
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url: 'http://www.zazma.com/'
+      goutte:    ~
