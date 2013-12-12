@@ -3,5 +3,5 @@ Feature:
 
 Scenario: Check that the home page contains my name
     When I am on the homepage
-    Then I should see "RonK"
+    Then I should see "Zazma"
 
