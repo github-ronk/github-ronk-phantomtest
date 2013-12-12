@@ -15,7 +15,7 @@ default:
   extensions:
     Behat\MinkExtension\Extension:
       base_url: 'http://www.zazma.com/'
-      javascript_session: sahi
+      javascript_session: selenium2
       browser_name: phantomjs
       goutte:    ~
       sahi:    ~
