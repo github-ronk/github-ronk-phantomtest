@@ -16,8 +16,9 @@ default:
     Behat\MinkExtension\Extension:
       base_url: 'http://www.zazma.com/'
       javascript_session: selenium2
+      default_session: selenium2
       browser_name: phantomjs
-      goutte:    ~
-      sahi:    ~
+      #goutte:    ~
+      #sahi:    ~
       selenium2:
         wd_host: "http://localhost:8643/wd/hub"
